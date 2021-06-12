@@ -18,6 +18,8 @@ const Tabs = () => {
                 showLabel: false,
                 style: {
                     height: 140,
+                    borderTopRightRadius: 20,
+                    borderTopLeftRadius: 20,
                     backgroundColor: COLORS.primary,
                     borderTopColor: "transparent",
                 }
