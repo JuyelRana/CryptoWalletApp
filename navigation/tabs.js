@@ -2,10 +2,10 @@ import React from "react";
 import {
     TouchableOpacity,
 } from "react-native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
 
-import { Home, Portfolio, Market, Profile } from "../screens"
-import { COLORS } from "../constants"
+import {Home, Portfolio, Market, Profile} from "../screens"
+import {COLORS} from "../constants"
 
 const Tab = createBottomTabNavigator()
 
@@ -14,16 +14,18 @@ const Tabs = () => {
     return (
         <Tab.Navigator
             tabBarOptions={{
+                showLabel: false,
                 style: {
+                    height:140,
                     backgroundColor: COLORS.primary,
                     borderTopColor: "transparent",
                 }
-            }}
-        >
+            }}>
+
             <Tab.Screen
                 name="Home"
-                component={Home}
-            />
+                component={Home}/>
+
             <Tab.Screen
                 name="Portfolio"
                 component={Portfolio}
