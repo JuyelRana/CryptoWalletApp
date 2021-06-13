@@ -17,8 +17,8 @@ const Tabs = ({setTradeModalVisibility, isTradeModalVisible}) => {
                 showLabel: false,
                 style: {
                     height: 140,
-                    // borderTopRightRadius: 20,
-                    // borderTopLeftRadius: 20,
+                    // borderTopRightRadius: (!isTradeModalVisible) ? 20 : 0,
+                    // borderTopLeftRadius: (!isTradeModalVisible) ? 20 : 0,
                     backgroundColor: COLORS.primary,
                     borderTopColor: "transparent",
                 }
