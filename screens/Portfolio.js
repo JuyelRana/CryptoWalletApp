@@ -1,14 +1,15 @@
 import React from 'react';
-import {
-    View,
-    Text
-} from 'react-native';
+import {Text, View} from 'react-native';
+import {MainLayout} from "./";
 
 const Portfolio = () => {
     return (
-        <View>
-            <Text>Portfolio</Text>
-        </View>
+        <MainLayout>
+            <View>
+                <Text>Portfolio</Text>
+            </View>
+        </MainLayout>
+
     )
 }
 
