@@ -5,6 +5,7 @@ import {connect} from "react-redux";
 import {getCoinMarket, getHoldings} from "../store/actions/market/marketAction";
 import {holdings} from "../constants/dummy";
 import {useFocusEffect} from "@react-navigation/native";
+import {COLORS} from "../constants";
 
 const Home = ({getHoldings, getCoinMarket, myHoldings, coins}) => {
 
@@ -12,16 +13,28 @@ const Home = ({getHoldings, getCoinMarket, myHoldings, coins}) => {
         useCallback(() => {
             getHoldings(holdings);
             //getCoinMarket();
-            console.log("useFocusEffect");
-            console.log(myHoldings);
+            // console.log("useFocusEffect");
+            // console.log(myHoldings);
             // console.log(coins);
         }, [])
     )
 
+    console.log(myHoldings);
+
     return (
         <MainLayout>
-            <View>
-                <Text>Home</Text>
+            <View style={{
+                flex: 1,
+                backgroundColor: COLORS.black
+            }}>
+
+                {/*Header - Wallet Info*/}
+
+
+
+                {/*Chart */}
+
+                {/*Top Cryptocurrency */}
             </View>
         </MainLayout>
     )
